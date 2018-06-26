@@ -39,15 +39,11 @@ end
 
 def parse_character_movies(films_hash)
   # some iteration magic and puts out the movies in a nice list
-  #title("title")-description("opening_crawl")
   filmData = films_hash.flatten
   filmData.each do |data|
     puts data["title"]
-    #puts data["opening_crawl"]
   end
 end
-
-#binding.pry
 
 def show_character_movies(character)
   films_hash = get_character_movies_from_api(character)
